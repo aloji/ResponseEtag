@@ -1,4 +1,5 @@
 ﻿using Aloji.AspNetCore.ResponseETag.Middleware;
+using System;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -6,10 +7,14 @@ namespace Microsoft.AspNetCore.Builder
     {
         public static IApplicationBuilder UseResponseETag(this IApplicationBuilder builder)
         {
-            var result = builder;
+            if (builder == null)
+            {
+                throw new ArgumentNullException(nameof(builder));
+            }
+
             builder.UseMiddleware<ResponseETagMiddleware>();
             builder.UseMiddleware<ResponseStatus304Middleware>();
-            return result;
+            return builder;
         }
     }
 }
