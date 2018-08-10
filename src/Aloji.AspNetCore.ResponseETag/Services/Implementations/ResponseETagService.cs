@@ -40,8 +40,10 @@ namespace Aloji.AspNetCore.ResponseETag.Services.Implementations
             using (var md5 = MD5.Create())
             {
                 var hash = md5.ComputeHash(bodyAsBytes);
-                result = BitConverter.ToString(hash)
+                var value = BitConverter.ToString(hash)
                     .Replace("-", "");
+                
+                result = $"\"{value}\""; //https://stackoverflow.com/questions/6719214/syntax-for-etag
             }
             return result;
         }

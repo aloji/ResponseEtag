@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aloji.AspNetCore.ResponseETag", "src\Aloji.AspNetCore.ResponseETag\Aloji.AspNetCore.ResponseETag.csproj", "{0C9ABAC2-1035-45C2-94EB-86A5E0AA3C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aloji.AspNetCore.ResponseETag", "src\Aloji.AspNetCore.ResponseETag\Aloji.AspNetCore.ResponseETag.csproj", "{0C9ABAC2-1035-45C2-94EB-86A5E0AA3C24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4AF6E082-F236-4DF9-88CB-2E656F07898E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C9ABAC2-1035-45C2-94EB-86A5E0AA3C24} = {4AF6E082-F236-4DF9-88CB-2E656F07898E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E14D8830-8F1E-4939-8F6E-54932662928E}
