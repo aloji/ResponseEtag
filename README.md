@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/aloji/Aloji/_apis/build/status/aloji.ResponseEtag?branchName=master)](https://dev.azure.com/aloji/Aloji/_build/latest?definitionId=4&branchName=master)
+
 # ASP.NET Core - HTTP ETag Middleware
 
 [By Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
